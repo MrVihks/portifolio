@@ -1,0 +1,50 @@
+---
+import CTAButton from "../components/CTAButton.astro";
+import SkillCard from "../components/SkillCard.astro";
+---
+
+<section class="flex flex-col bg-dark min-h-screen p-[20px]">
+  <article class="flex flex-col items-center justify-center text-center gap-6">
+    <h1
+      class="text-4xl font-header text-white uppercase font-bold text-center mt-[20px]"
+    >
+      Sobre mim
+    </h1>
+    <div class="bg-brand w-[40%] h-[3px]"></div>
+    <p class="text-xl text-white font-normal">
+      Aqui você vai encontrar todas as informações sobre mim
+    </p>
+  </article>
+
+  <section class="flex flex-col gap-10 lg:flex-row">
+      <article class="flex flex-col gap-4 text-white font-normal text-xl">
+      <h3 class="font-bold text-3xl max-lg:mt-20">Me conheça</h3>
+      <p>
+        Eu sou um Desenvolvedor Web que tem como base alguns princípios como:
+        <span class="font-bold">seriedade, profissionalismo, ética e persistência.</span> Sempre muito motivado
+        a desenvolver soluções para problemas que não “podem” ser resolvidos.
+      </p>
+      <p>
+        Sinta-se livre para me seguir ou se conectar no meu <span class="font-bold">Linkedin</span>.
+      </p>
+   
+    </article>
+    <article class="flex flex-col gap-4 text-white font-normal lg:w-[50%]">
+      <h3 class="font-bold text-3xl">Minhas habilidades</h3>
+      <section class="grid grid-cols-3 grid-rows-2 gap-4">
+        <SkillCard src="/figma.svg" title="Figma" />
+        <SkillCard src="/javascript.svg" title="JS" />
+        <SkillCard src="/typescript.svg" title="TS" />
+        <SkillCard src="/react.svg" title="React" />
+        <SkillCard src="/nextjs.svg" title="NextJS" />
+        <SkillCard src="/seo.svg" title="SEO" />
+        <SkillCard src="/n8n.svg" title="N8N" />
+        <SkillCard src="/python.svg" title="Python" />
+        <SkillCard src="/selenium.svg" title="Selenium" />
+        <SkillCard src="/postgresql.svg" title="PostgreSQL" />
+        <SkillCard src="/tailwindcss.svg" title="TailwindCSS" />
+      </section>
+    </article>
+  
+  </section>
+</section>

@@ -1,0 +1,8 @@
+---
+const {src, title} = Astro.props
+---
+
+<article class="text-xl flex flex-col text-center items-center justify-center p-2 gap-2 font-normal bg-brand rounded-lg w-[110px] h-[110px] cta">
+    <img src={src} class="w-[40px] h-auto" alt={title}/>
+    <p class="font-bold">{title}</p>
+</article>
