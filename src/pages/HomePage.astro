@@ -2,7 +2,7 @@
 import CTAButton from "../components/CTAButton.astro";
 ---
 
-<header class="flex flex-col items-center gap-5 home min-h-screen px-[20px] lg:relative lg:justify-center lg:flex-row lg:overflow-hidden">
+<header class="flex flex-col items-center gap-5 home min-h-screen px-[20px] lg:relative justify-center lg:flex-row lg:overflow-hidden">
   <div
     class="bg-[#0A1F46]/60 rounded-full w-[235px] h-[235px] overflow-hidden mt-20  lg:hidden border-white border-2"
   >
@@ -10,19 +10,19 @@ import CTAButton from "../components/CTAButton.astro";
       src="/vinicius-photo.png"
       height="291px"
       width="194px"
-      class="mt-[-30] ml-[-45px] min-w-[300px] h-[300px]"
+      class="mt-[-30] ml-[-45px] min-w-[300px] h-[300px] object-cover"
     />
   </div>
-  <section class="text-center lg:text-left flex flex-col gap-6 lg:w-[50%]">
+  <section class="text-center lg:text-left flex flex-col gap-6 lg:w-[100%]">
     <article class="flex flex-col gap-1">
       <h1 class="font-header text-5xl font-black text-white lg:text-6xl">
         VINICIUS HENRIQUE
       </h1>
-      <h3 class="text-mid uppercase font-header text-3xl">Desenvolvedor web</h3>
+      <h3 class="text-mid uppercase font-header text-3xl lg:text-4xl">Desenvolvedor web</h3>
     </article>
-    <div class="border-2 border-brand w-full"></div>
+    <div class="border-2 border-brand w-full md:hidden lg:w-[55%]"></div>
     <article class="flex flex-col text-white gap-4 items-center justify-center lg:items-baseline">
-      <p class="font-normal text-xl lg:text-2xl">
+      <p class="font-normal text-xl lg:text-3xl lg:w-[55%]">
         Desenvolvedor apaixonado por aprender, sempre motivado a desenvolver
         soluções de forma criativa e performática
       </p>
@@ -36,7 +36,7 @@ import CTAButton from "../components/CTAButton.astro";
       src="/vinicius-photo.png"
       height="291px"
       width="194px"
-      class="mt-[-100px] min-w-[700px] h-[700px] object-cover absolute top-[200px]"
+      class="min-w-[700px] h-auto absolute bottom-0 right-20 object-cover"
     />
   </div>
 </header>
