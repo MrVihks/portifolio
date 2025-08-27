@@ -2,31 +2,41 @@
 import CTAButton from "../components/CTAButton.astro";
 ---
 
-<header
-  class="flex flex-col items-center gap-5 home min-h-screen px-[20px]"
->
-  <div class="bg-[#0A1F46]/60 rounded-full w-[235px] h-[235px] overflow-hidden mt-20">
+<header class="flex flex-col items-center gap-5 home min-h-screen px-[20px] lg:relative lg:justify-center lg:flex-row lg:overflow-hidden">
+  <div
+    class="bg-[#0A1F46]/60 rounded-full w-[235px] h-[235px] overflow-hidden mt-20  lg:hidden border-white border-2"
+  >
     <img
       src="/vinicius-photo.png"
-      height="235px"
-      width="235px"
-      class="mt-10 ml-[-8px]"
+      height="291px"
+      width="194px"
+      class="mt-[-30] ml-[-45px] min-w-[300px] h-[300px]"
     />
   </div>
-  <section class="text-center flex flex-col gap-6 ">
+  <section class="text-center lg:text-left flex flex-col gap-6 lg:w-[50%]">
     <article class="flex flex-col gap-1">
-      <h1 class="font-header text-5xl text-center font-black text-white">VINICIUS HENRIQUE</h1>
+      <h1 class="font-header text-5xl font-black text-white lg:text-6xl">
+        VINICIUS HENRIQUE
+      </h1>
       <h3 class="text-mid uppercase font-header text-3xl">Desenvolvedor web</h3>
     </article>
-     <div class="border-2 border-brand w-full"></div>
-    <article class="flex flex-col text-white gap-4 items-center justify-center">
-      <p class="font-normal text-xl">
+    <div class="border-2 border-brand w-full"></div>
+    <article class="flex flex-col text-white gap-4 items-center justify-center lg:items-baseline">
+      <p class="font-normal text-xl lg:text-2xl">
         Desenvolvedor apaixonado por aprender, sempre motivado a desenvolver
         soluções de forma criativa e performática
       </p>
       <CTAButton />
     </article>
   </section>
-
- 
+    <div
+    class="rounded-full w-[535px] h-[435px] mt-20 hidden lg:flex"
+  >
+    <img
+      src="/vinicius-photo.png"
+      height="291px"
+      width="194px"
+      class="mt-[-100px] min-w-[700px] h-[700px] object-cover absolute top-[200px]"
+    />
+  </div>
 </header>
